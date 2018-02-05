@@ -11,8 +11,8 @@ var auth = require('../authentication/auth.js');
 
 
 //db connection
-const dbConfig = require('../db.config.json').mlab;
-let stringConnection = dbConfig;
+// const dbConfig = require('../db.config.json').mlab;
+let stringConnection = 'mongodb://devddubon:Callejero_1@ds225078.mlab.com:25078/currencyexchangedb';
 
 mongoose.connect(stringConnection);
 
