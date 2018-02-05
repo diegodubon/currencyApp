@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> {{!-- bootstrapp css --}}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h2> Currency Exchange App</h2>
+    <p>Select your currency</p>
+    <div class="col-md-12">
+      <div class="row">
+        <div class="form-group">
+          <label>Curency1</label>
+          <select id="currency1Select">
+
+          </select>
+          <input id="number1" type="number">
+        </div>
+
+        <p>=></p>
+        <div class="form-group">
+          <label for="currency2">Curency2</label>
+          <select name="currency2" id="currency2Select">
+          </select>
+          <input id="number2" type="number">
+        </div>
+      </div>
+      <div class="row">
+        <h3>Exchange Currency Chart</h3>
+      </div>
+      <div class="row">
+           <div class="col-md-5">
+          <canvas id="myChart" width="400px" height="200px"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="jquery-3.3.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
