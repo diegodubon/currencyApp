@@ -11,11 +11,11 @@ var users = require('./routes/users');
 var compression = require('compression');
 
 var hbs = require('express-handlebars');
-// var cors = require("cors");
+var cors = require("cors");
 var app = express();
 
 //enabling CORS
-// app.use(cors());
+app.use(cors());
 
 
 //improving performance
