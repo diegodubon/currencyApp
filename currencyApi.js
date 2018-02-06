@@ -123,20 +123,20 @@ module.exports.getCurrencyByDateRange = function (db, params) {
             } else {
                 // console.log(doc)
                 let rates = []
-
+                let obj = {}
                 doc.forEach(element => {
 
-                    let obj = {
-                    }
+                  
                     obj[element.Date] = element[params.currency2]
-                    rates.push(obj)
+                    // console.log(JSON.stringify(obj))
+                    // rates.push(obj)
                 });
                 let result = {
                     base: params.currency1,
                     versus: params.currency2,
                     start: params.startDate,
                     end: params.endDate,
-                    rates: rates
+                    rates: obj
                 }
                 resolve(result)
             }

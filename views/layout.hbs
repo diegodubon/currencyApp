@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge"> {{!-- bootstrapp css --}}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <title>Document</title>
 </head>
 
@@ -36,11 +37,25 @@
         <h3>Exchange Currency Chart</h3>
       </div>
       <div class="row">
-        <p>Date:
-          <input type="text" id="datepicker">
-        </p>
+
         <div class="col-md-5">
-          <canvas id="myChart" width="400px" height="200px"></canvas>
+          <div class="form-group">
+
+            <p>Start Date:
+              <input type="text" id="datepicker1">
+            </p>
+          </div>
+          <div class="form-group">
+            <p>End Date:
+              <input type="text" id="datepicker2">
+            </p>
+          </div>
+          <div class="form-group">
+            <button onclick="loadChart()"type="button">Load</button>
+          </div>
+
+
+          <canvas id="myChart" width="800px" height="800px"></canvas>
         </div>
       </div>
     </div>
@@ -49,8 +64,10 @@
 
 
   <script src="jquery-3.3.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script> 
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   <script src="main.js"></script>
 
 </body>
