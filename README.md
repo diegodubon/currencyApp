@@ -1,4 +1,5 @@
 # currencyApp
 Api Crendencials
-username:devuser
-password:devuser
+
+- username: devuser
+- password: devuser
