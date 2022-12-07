@@ -17,7 +17,7 @@
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.4",
     "debug": "~2.6.3",
-    "express": "~4.15.2",
+    "express": "~4.17.3",
     "express-handlebars": "^3.0.0",
     "https": "^1.0.0",
     "imageurl-base64": "^1.0.0",
