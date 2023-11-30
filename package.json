@@ -18,7 +18,7 @@
     "cors": "^2.8.4",
     "debug": "~2.6.3",
     "express": "~4.15.2",
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^7.0.0",
     "https": "^1.0.0",
     "imageurl-base64": "^1.0.0",
     "jade": "~1.11.0",
